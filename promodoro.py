@@ -7,7 +7,7 @@ def beep():
     """Cross-platform simple sound alert."""
     if platform.system() == "Windows":
         import winsound
-        winsound.Beep(1000, 500)
+        winsound.Beep(2000, 1000)
     else:
         print('\a')  # ASCII Bell character
 
