@@ -29,7 +29,7 @@ def pomodoro(cycles=4, work_duration=25, break_duration=5, sound=True):
     for i in range(1, cycles + 1):
         print(f"\n🍅 Pomodoro {i} - Work for {work_duration} minutes")
         countdown(work_duration, label=f"Work {i}")
-        print("✅ Work session complete!")
+        print("✅ Work session complete go for rest !")
         if sound: beep()
 
         if i != cycles:
@@ -61,4 +61,4 @@ if __name__ == "__main__":
 
         pomodoro(cycles=cycles, work_duration=work, break_duration=brk, sound=sound)
     except KeyboardInterrupt:
-        print("\n⏹️ Exiting. Stay focused!")
+        print("\n⏹️ Exiting. Always Stay focused!")
